@@ -66,7 +66,7 @@ function getName() {
   //Answer Here
 
 //"Falsy values: undefined, NaN, null, "", 0"
-//"Check if something is falsy: var !== true"
+//"Check if something is falsy: !variable"
 
 
 //////////////////PROBLEM 6////////////////////
@@ -100,8 +100,8 @@ alert(newMyName());
   //Code Here
 
 function outerFn() {
-  function anonymous() {
-      return newMyName();
+  return function() {
+    return "Eric";
   }
 }
 
@@ -112,3 +112,5 @@ function outerFn() {
   var innerFn = outerFn();
 
 //Now invoke innerFn.
+
+innerFn();
